@@ -1,4 +1,5 @@
 import React, { ChangeEvent, useState } from "react";
+import { IData } from "../../types";
 import Field from "./Field/Field.component";
 import * as Styled from "./Form.styled";
 
@@ -38,11 +39,5 @@ const Form = () => {
     </Styled.Container>
   );
 };
-
-interface IData {
-  name: string;
-  email: string;
-  message: string;
-}
 
 export default Form;
