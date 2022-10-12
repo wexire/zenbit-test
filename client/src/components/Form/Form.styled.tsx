@@ -29,4 +29,5 @@ export const Button = styled.button`
   font-family: "Apercu", monospace;
   border: none;
   width: max-content;
+  cursor: pointer;
 `;
