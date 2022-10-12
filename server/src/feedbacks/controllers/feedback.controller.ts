@@ -1,6 +1,6 @@
 import { Body, Controller, Get, Post } from '@nestjs/common';
 import { CreateFeedbackDto } from '../dtos/createFeedback.dto';
-import { FeedbacksService } from '../service/service.service';
+import { FeedbacksService } from '../service/feedback.service';
 
 @Controller('feedbacks')
 export class FeedbacksController {
