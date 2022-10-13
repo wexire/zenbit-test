@@ -7,10 +7,12 @@ export class FeedbacksController {
   constructor(private feedbackService: FeedbacksService) {}
 
   @Get()
-  getFeedbacks() {}
+  async getFeedbacks() {
+    await this.feedbackService.getFeedbacks();
+  }
 
   @Post()
-  createFeedback(@Body() createFeedbackDto: CreateFeedbackDto) {
-    this.feedbackService.createFeedback(createFeedbackDto);
+  async createFeedback(@Body() createFeedbackDto: CreateFeedbackDto) {
+    await this.feedbackService.createFeedback(createFeedbackDto);
   }
 }

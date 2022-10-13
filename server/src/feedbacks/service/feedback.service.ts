@@ -11,7 +11,9 @@ export class FeedbacksService {
     private feedbackRepository: Repository<Feedback>,
   ) {}
 
-  getFeedbacks() {}
+  getFeedbacks() {
+    return this.feedbackRepository.find();
+  }
 
   createFeedback(createFeedbackData: createFeedbackParams) {
     const newFeedback = this.feedbackRepository.create({
