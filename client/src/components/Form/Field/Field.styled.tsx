@@ -12,6 +12,7 @@ export const Field = styled.textarea`
   font-weight: 400;
   font-family: "Apercu", monospace;
   line-height: 1.75em;
+  resize: none;
 
   &::placeholder {
     color: #2d2d2d;

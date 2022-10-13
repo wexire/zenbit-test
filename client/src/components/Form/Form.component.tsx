@@ -1,14 +1,17 @@
 import React, { ChangeEvent, useState } from "react";
+import { createFeedback } from "../../service/api";
 import { IData } from "../../types";
 import Field from "./Field/Field.component";
 import * as Styled from "./Form.styled";
 
 const Form = () => {
-  const [data, setData] = useState<IData>({
+  const initialValues = {
     name: "",
     email: "",
     message: "",
-  });
+  };
+
+  const [data, setData] = useState<IData>(initialValues);
 
   return (
     <Styled.Container>
@@ -35,7 +38,14 @@ const Form = () => {
           setData({ ...data, message: e.currentTarget.value })
         }
       />
-      <Styled.Button onClick={() => {}}>Send message</Styled.Button>
+      <Styled.Button
+        onClick={() => {
+          createFeedback(data);
+          setData(initialValues);
+        }}
+      >
+        Send message
+      </Styled.Button>
     </Styled.Container>
   );
 };
