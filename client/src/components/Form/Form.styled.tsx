@@ -7,6 +7,10 @@ export const Container = styled.div`
   width: 35.2em;
   top: 20%;
   left: 10%;
+
+  @media (max-width: 700px) {
+    width: 80%;
+  }
 `;
 
 export const Title = styled.span`

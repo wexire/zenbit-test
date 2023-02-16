@@ -38,4 +38,12 @@ export const LinksContainer = styled.div`
   img {
     cursor: pointer;
   }
+
+  @media (max-width: 1000px) {
+    left: 35%;
+  }
+
+  @media (max-width: 700px) {
+    top: -185%;
+  }
 `;

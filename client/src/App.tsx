@@ -6,13 +6,15 @@ import ImagesBackground from "./components/ImagesBackground/ImagesBackground.com
 
 function App() {
   return (
-    <div>
+    <Styled.Container>
       <Styled.ContentBlock>
         <ImagesBackground />
         <Form />
       </Styled.ContentBlock>
-      <Footer />
-    </div>
+      <Styled.FooterBlock>
+        <Footer />
+      </Styled.FooterBlock>
+    </Styled.Container>
   );
 }
 

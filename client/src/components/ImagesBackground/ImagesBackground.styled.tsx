@@ -21,6 +21,10 @@ export const yellowGoodieSmileBottom = styled.img`
 export const mapCircle = styled.img`
   position: absolute;
   right: 0;
+
+  @media (max-width: 700px) {
+    width: 14em;
+  }
 `;
 
 export const elipse = styled.img`
