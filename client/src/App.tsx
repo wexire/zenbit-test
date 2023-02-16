@@ -8,8 +8,8 @@ function App() {
   return (
     <div>
       <Styled.ContentBlock>
-        <Form />
         <ImagesBackground />
+        <Form />
       </Styled.ContentBlock>
       <Footer />
     </div>

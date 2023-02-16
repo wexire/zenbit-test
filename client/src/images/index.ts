@@ -7,6 +7,8 @@ import pinterestIcon from "./pinterest.svg";
 import facebookIcon from "./facebook.svg";
 import twitterIcon from "./twitter.svg";
 import linkedinIcon from "./linkedin.svg";
+import elipse from "./elipse.svg";
+import clouds from "./clouds.svg";
 
 export {
   blueGoodie,
@@ -18,4 +20,6 @@ export {
   facebookIcon,
   twitterIcon,
   linkedinIcon,
+  elipse,
+  clouds,
 };

@@ -5,6 +5,7 @@ export const Container = styled.div`
   width: 100%;
   overflow: hidden;
   border: 1px solid #d8d8d8;
+  background-color: #fafafa;
 `;
 
 export const pinkGoodie = styled.img`
